@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un chat que se llama Growl 🐻">
+
+    <meta name="theme-color" content="#111">
+
+    <title>Chat App</title>
+
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="preconnect">
+
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="./chat.js" defer></script>
+</head>
+<body>
+    <div class="channels">
+        <div>
+            <div class="channel">
+                <a href="./">🏠 Home</a>
+            </div>
+            <div class="channel">
+                <a href="./chat">💬 Chat</a>
+            </div>
+        </div>
+        <div class="profile-info">
+            <img class="profile-img" alt="Imágen de perfil">
+            <p></p>
+        </div>
+        <img src="./icons/menu.svg" alt="Menu" class="menu">
+    </div>
+    <div class="chat">
+        <div class="messages"></div>
+
+        <form id="send-message">
+            <input type="text" placeholder="Message..." autofocus>
+            <button type="button" id="add-gif">GIF</button>
+            <button type="submit" id="send-the-message">Send</button>
+        </form>
+    </div>
+    <div class="profile-imgs"></div>
+    <form id="changeName">
+        <input type="text" placeholder="Name..." maxlength="20">
+        <button type="submit">Change</button>
+    </form>
+
+    <div class="gifs-container">
+        <form>
+            <input type="text" placeholder="Search Gifs...">
+            <button type="submit">Search</button>
+        </form>
+        <div class="gifs-place">
+
+        </div>
+        <img src="./icons/x.svg" alt="X" class="btn-close">
+    </div>
+
+    <img src="./icons/audio.svg" alt="audio" draggable="false" class="audio-config">
+    <div class="audio-config-cont">
+        <h2>Sound settings</h2>
+        
+        <p>Select notification sound</p>
+
+        <select>
+            <option>Audio 1</option>
+            <option>Audio 2</option>
+            <option>Audio 3</option>
+            <option>Audio 4</option>
+            <option>Audio 5</option>
+            <option>Audio 6</option>
+        </select>
+    </div>
+
+    <div class="connections"></div>
+
+    <div class="bg"></div>
+</body>
+</html>
