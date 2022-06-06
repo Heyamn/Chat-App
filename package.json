@@ -1,7 +1,7 @@
 {
-  "name": "growl",
+  "name": "chat-app",
   "version": "1.0.0",
-  "description": "Un chat que se llama growl 🐻",
+  "description": "Chat-App 🐻",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
